@@ -1,6 +1,6 @@
 language: python
 python:
-  - "2.7"
+  - "3.10"
 install: "pip install -r app/requirements.txt"
 script:
   - python app/test.py

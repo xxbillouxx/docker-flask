@@ -1,7 +1,7 @@
 FROM python:slim-bullseye
 
 RUN apt-get update -y && apt-get dist-upgrade -y && apt-get install -y \
-    python-pip python-dev uwsgi-plugin-python \
+    python3-pip python-dev uwsgi-plugin-python \
     nginx supervisor
 
 COPY nginx/flask.conf /etc/nginx/sites-available/
